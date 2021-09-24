@@ -1,0 +1,192 @@
+@import 'vars';
+@import 'fonts';
+
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+
+body{
+    background-color: #F8F8F8;
+    margin: 0;
+    min-width: 320px;
+    overflow-x: hidden;
+    font-family: 'TTLakes-Medium', 'Arial', 'Sans-serif';
+    font-weight: 400;
+}
+
+.container{
+    padding: 0 16px;
+}
+
+.header{
+    background-color: $white;
+    .menu{
+        min-height: 88px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        .logo__link-img{
+            width: 97px;
+            height: 50px;
+            vertical-align: middle;
+        }
+        &__button{
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            background-color: $pink;
+            border: none;
+            &-burger{
+                background-image: url('../img/burger.svg');
+            }
+            &-repair{
+                background-image: url(../img/repair.svg);
+            }
+            &-checkStatus{
+                background-image: url(../img/checkstatus.svg);
+            }
+            &-call{
+                background-image: url(../img/call.svg);
+                display: none;
+            }
+            &-chat{
+                background-image: url(../img/chat.svg);
+                display: none;
+            }
+            &-profile{
+                background-image: url(../img/profile.svg);
+                display: none;
+            }
+        }
+
+        &::after{
+            position: absolute;
+            content: '';
+            height: 32px;
+            width: 2px;
+            background-color: $gray;
+            left: 170px;
+            right: 116px;
+        }
+
+    }
+
+}
+
+.services{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 24px;
+    &__title{
+        h1{
+            font-family: 'TTLakes-Bold';
+            font-size: 28px;
+            font-weight: 900;
+            color: $fontbold;
+            line-height: 40px;
+
+        }
+        margin-bottom: 24px;
+        &-buttons{
+            display: none;
+        }
+    }
+    &::before{
+        position: absolute;
+        content: '';
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        width: 4px;
+        height: 40px;
+        background-color: #41F6D7;
+
+    }
+}
+
+.slider__menu{
+    overflow-x: auto;
+    display: -webkit-box;
+    &-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 246px;
+        height: 40px;
+        &:hover{
+            background: #FFFFFF;
+            border: 2px solid #B8ffEC;
+            border-radius: 6px;
+        }
+        &_link{
+            text-decoration: none;
+            font-size: 16px;
+            line-height: 24px;
+            color: $item;
+            letter-spacing: -0.2px;
+        }
+    }
+}
+
+.services__description{
+    margin-top: 24px;
+    justify-content: space-between;
+    &-description{
+        &_first{
+            color: #1B1C21;
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: 0.2px;
+            margin-bottom: 16px;
+
+        }
+
+        &_second{
+            display: none;
+        }
+
+        &_third{
+            display: none;
+        }
+        &_readnext{
+            display: flex;
+            align-items: center;
+            h4{
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: -0.2px;
+                color: #1B1C21;
+                margin-left: 8px;
+                font-weight: 400;
+            }
+            margin-bottom: 16px;
+        }
+    }
+
+
+
+    &-service_photo{
+        display: flex;
+        justify-content: center;
+        img{
+            border-radius: 10px;
+            height: auto;
+            max-width: 100%;
+        }
+    }
+}
+
+
+@import 'tablet-768';
+@import 'tablet-1120';

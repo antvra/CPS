@@ -1,0 +1,156 @@
+@font-face {
+  font-family: 'TTLakes-Medium';
+  font-weight: 500;
+  font-style: normal;
+  src: url(../fonts/TTLakes-Medium.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'TTLakes-Bold';
+  font-weight: 700;
+  font-style: normal;
+  src: url(../fonts/TTLakes-Bold.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'TTLakes-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: url(../fonts/TTLakes-Regular.woff) format("woff");
+}
+
+@media (min-width: 1120px) {
+  .header {
+    display: none;
+  }
+  .container {
+    padding: 0 32px;
+  }
+  .services {
+    margin-top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    margin-top: 42px;
+  }
+  .services__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  .services__title h1 {
+    font-family: 'TTLakes-Bold';
+    font-size: 28px;
+    font-weight: 900;
+    color: #1B1C21;
+    line-height: 40px;
+  }
+  .services__title-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .services__title-buttons_btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .services__title-buttons_btn .btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #FF3E79;
+    border: none;
+    margin-left: 8px;
+  }
+  .services__title-buttons_btn .btn__button-repair {
+    background-image: url(../img/repair.svg);
+    margin-right: 32px;
+  }
+  .services__title-buttons_btn .btn__button-checkStatus {
+    background-image: url(../img/checkstatus.svg);
+  }
+  .services__title-buttons_btn h4 {
+    color: #1B1C21;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .services::before {
+    position: absolute;
+    content: '';
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 4px;
+    height: 40px;
+    background-color: #41F6D7;
+  }
+  .slider__menu {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .services__description {
+    margin-top: 20px;
+  }
+  .services__description-description_first {
+    color: #1B1C21;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    margin-bottom: 16px;
+  }
+  .services__description-description_second {
+    display: none;
+  }
+  .services__description-description_third {
+    color: #1B1C21;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    margin-bottom: 10px;
+    display: block;
+  }
+  .services__description-description_readnext {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 16px;
+  }
+  .services__description-description_readnext h4 {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    margin-left: 8px;
+    font-weight: 400;
+  }
+  .services__description-service_photo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 300px;
+  }
+}
+/*# sourceMappingURL=tablet-1120.css.map */

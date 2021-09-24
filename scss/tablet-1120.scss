@@ -1,0 +1,126 @@
+@import 'vars';
+@import 'fonts';
+
+@media (min-width: 1120px){
+    .header{
+        display: none;
+    }
+
+    .container{
+        padding: 0 32px;
+    }
+
+    .services{
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-top: 42px;
+        &__title{
+            display: flex;
+            justify-content: space-between;
+            h1{
+                font-family: 'TTLakes-Bold';
+                font-size: 28px;
+                font-weight: 900;
+                color: $fontbold;
+                line-height: 40px;
+            }
+            margin-bottom: 8px;
+            &-buttons{
+                display: flex;
+                &_btn{
+                    display: flex;
+                    align-items: center;
+                    .btn{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 20px;
+                        background-color: $pink;
+                        border: none;
+                        margin-left: 8px;
+                        &__button-repair{
+                            background-image: url(../img/repair.svg);
+                            margin-right: 32px;
+                        }
+                        &__button-checkStatus{
+                            background-image: url(../img/checkstatus.svg);
+                        }
+                    }
+                    h4{
+                        color: #1B1C21;
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+        &::before{
+            position: absolute;
+            content: '';
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            width: 4px;
+            height: 40px;
+            background-color: #41F6D7;
+
+        }
+    }
+
+    .slider__menu{
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+
+    .services__description{
+        margin-top: 20px;
+        &-description{
+            &_first{
+                color: #1B1C21;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0.2px;
+                margin-bottom: 16px;
+
+            }
+
+            &_second{
+                display: none;
+            }
+
+            &_third{
+                color: #1B1C21;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0.2px;
+                margin-bottom: 10px;
+                display: block;
+            }
+            &_readnext{
+                display: flex;
+                align-items: center;
+                h4{
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: -0.2px;
+                    color: #1B1C21;
+                    margin-left: 8px;
+                    font-weight: 400;
+                }
+                margin-bottom: 16px;
+            }
+        }
+
+        &-service_photo{
+            display: flex;
+            justify-content: center;
+            height: 300px;
+        }
+
+    }
+
+
+
+}
