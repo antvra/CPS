@@ -24,7 +24,7 @@
     padding: 0 24px;
   }
   .header .menu__button-call {
-    margin-left: 250px;
+    margin-left: auto;
     display: initial;
   }
   .header .menu__button-chat {
