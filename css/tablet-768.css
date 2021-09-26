@@ -50,8 +50,7 @@
     right: 658px;
   }
   .header .menu::after {
-    left: 602px;
-    right: 116px;
+    left: auto;
   }
   .header .menu .logo {
     margin-left: 42px;
