@@ -45,7 +45,8 @@ body {
 }
 
 .container {
-  padding: 0 16px;
+  width: 95%;
+  margin: auto;
 }
 
 .header {
@@ -64,6 +65,38 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+}
+
+.header .menu-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .menu-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .menu .logo {
+  margin-left: 20px;
+}
+
+.header .menu .logo::after {
+  position: absolute;
+  content: '';
+  height: 32px;
+  width: 2px;
+  background-color: #EAEAEA;
+  left: 176px;
+  top: 28px;
 }
 
 .header .menu .logo__link-img {
@@ -89,6 +122,7 @@ body {
 }
 
 .header .menu__button-checkStatus {
+  margin-left: 20px;
   background-image: url(../img/checkstatus.svg);
 }
 
@@ -107,16 +141,6 @@ body {
   display: none;
 }
 
-.header .menu::after {
-  position: absolute;
-  content: '';
-  height: 32px;
-  width: 2px;
-  background-color: #EAEAEA;
-  left: 170px;
-  right: 116px;
-}
-
 .services {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -133,7 +157,7 @@ body {
   margin-bottom: 24px;
 }
 
-.services__title h1 {
+.services__title-title {
   font-family: 'TTLakes-Bold';
   font-size: 28px;
   font-weight: 900;
@@ -141,11 +165,7 @@ body {
   line-height: 40px;
 }
 
-.services__title-buttons {
-  display: none;
-}
-
-.services::before {
+.services__title-title::before {
   position: absolute;
   content: '';
   border-top-right-radius: 10px;
@@ -153,6 +173,11 @@ body {
   width: 4px;
   height: 40px;
   background-color: #41F6D7;
+  left: 0;
+}
+
+.services__title-buttons {
+  display: none;
 }
 
 .slider__menu {
@@ -267,40 +292,35 @@ body {
 }
 
 @media (min-width: 768px) {
-  .container {
-    padding: 0 24px;
-  }
   .header .menu__button-call {
-    margin-left: auto;
     display: initial;
   }
   .header .menu__button-chat {
-    margin-left: 16px;
+    margin-left: 20px;
     display: initial;
   }
   .header .menu__button-profile {
-    margin-left: 16px;
+    margin-left: 20px;
     margin-right: 42px;
     display: initial;
   }
-  .header .menu__button-repair {
-    margin-right: 16px;
-  }
-  .header .menu::before {
-    display: initial;
+  .header .menu__button-repair::before {
     position: absolute;
-    content: "";
+    content: '';
     height: 32px;
     width: 2px;
     background-color: #EAEAEA;
-    left: 60px;
-    right: 658px;
+    right: 120px;
+    top: 28px;
   }
-  .header .menu::after {
-    left: auto;
-  }
-  .header .menu .logo {
-    margin-left: 42px;
+  .header .menu .logo::after {
+    position: absolute;
+    content: '';
+    height: 32px;
+    width: 2px;
+    background-color: #EAEAEA;
+    left: 50px;
+    top: 28px;
   }
   .services {
     background-color: #F8F8F8;
@@ -317,21 +337,12 @@ body {
   .services__title {
     margin-bottom: 32px;
   }
-  .services__title h1 {
+  .services__title-title {
     font-family: 'TTLakes-Bold';
     font-size: 28px;
     font-weight: 900;
     color: #1B1C21;
     line-height: 40px;
-  }
-  .services::before {
-    position: absolute;
-    content: '';
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    width: 4px;
-    height: 40px;
-    background-color: #41F6D7;
   }
   .services__description {
     display: -webkit-box;
@@ -409,9 +420,6 @@ body {
   .header {
     display: none;
   }
-  .container {
-    padding: 0 32px;
-  }
   .services {
     margin-top: 0;
     display: -webkit-box;
@@ -433,7 +441,7 @@ body {
             justify-content: space-between;
     margin-bottom: 8px;
   }
-  .services__title h1 {
+  .services__title-title {
     font-family: 'TTLakes-Bold';
     font-size: 28px;
     font-weight: 900;
@@ -472,15 +480,6 @@ body {
     color: #1B1C21;
     font-size: 16px;
     font-weight: 500;
-  }
-  .services::before {
-    position: absolute;
-    content: '';
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    width: 4px;
-    height: 40px;
-    background-color: #41F6D7;
   }
   .slider__menu {
     display: -webkit-inline-box;

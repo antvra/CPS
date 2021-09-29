@@ -25,7 +25,8 @@ body{
 }
 
 .container{
-    padding: 0 16px;
+    width: 95%;
+    margin: auto;
 }
 
 .header{
@@ -36,6 +37,32 @@ body{
         justify-content: space-between;
         align-items: center;
         position: relative;
+
+        &-left{
+            display: flex;
+            align-items: center;
+        }
+
+        &-right{
+            display:flex;
+            align-items: center;
+        }
+
+        .logo{
+            margin-left: 20px;
+
+            &::after{
+                position: absolute;
+                content: '';
+                height: 32px;
+                width: 2px;
+                background-color: #EAEAEA;
+                left: 176px;
+                top: 28px;
+            }
+
+        }
+
         .logo__link-img{
             width: 97px;
             height: 50px;
@@ -54,6 +81,7 @@ body{
                 background-image: url(../img/repair.svg);
             }
             &-checkStatus{
+                margin-left: 20px;
                 background-image: url(../img/checkstatus.svg);
             }
             &-call{
@@ -70,15 +98,7 @@ body{
             }
         }
 
-        &::after{
-            position: absolute;
-            content: '';
-            height: 32px;
-            width: 2px;
-            background-color: $gray;
-            left: 170px;
-            right: 116px;
-        }
+
 
     }
 
@@ -90,28 +110,28 @@ body{
     position: relative;
     margin-top: 24px;
     &__title{
-        h1{
+        &-title{
             font-family: 'TTLakes-Bold';
             font-size: 28px;
             font-weight: 900;
             color: $fontbold;
             line-height: 40px;
+            &::before{
+                position: absolute;
+                content: '';
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                width: 4px;
+                height: 40px;
+                background-color: #41F6D7;
+                left: 0;
+            }
 
         }
         margin-bottom: 24px;
         &-buttons{
             display: none;
         }
-    }
-    &::before{
-        position: absolute;
-        content: '';
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-        width: 4px;
-        height: 40px;
-        background-color: #41F6D7;
-
     }
 }
 
@@ -173,8 +193,6 @@ body{
             margin-bottom: 16px;
         }
     }
-
-
 
     &-service_photo{
         display: flex;

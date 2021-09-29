@@ -20,40 +20,35 @@
 }
 
 @media (min-width: 768px) {
-  .container {
-    padding: 0 24px;
-  }
   .header .menu__button-call {
-    margin-left: auto;
     display: initial;
   }
   .header .menu__button-chat {
-    margin-left: 16px;
+    margin-left: 20px;
     display: initial;
   }
   .header .menu__button-profile {
-    margin-left: 16px;
+    margin-left: 20px;
     margin-right: 42px;
     display: initial;
   }
-  .header .menu__button-repair {
-    margin-right: 16px;
-  }
-  .header .menu::before {
-    display: initial;
+  .header .menu__button-repair::before {
     position: absolute;
-    content: "";
+    content: '';
     height: 32px;
     width: 2px;
     background-color: #EAEAEA;
-    left: 60px;
-    right: 658px;
+    right: 120px;
+    top: 28px;
   }
-  .header .menu::after {
-    left: auto;
-  }
-  .header .menu .logo {
-    margin-left: 42px;
+  .header .menu .logo::after {
+    position: absolute;
+    content: '';
+    height: 32px;
+    width: 2px;
+    background-color: #EAEAEA;
+    left: 50px;
+    top: 28px;
   }
   .services {
     background-color: #F8F8F8;
@@ -70,21 +65,12 @@
   .services__title {
     margin-bottom: 32px;
   }
-  .services__title h1 {
+  .services__title-title {
     font-family: 'TTLakes-Bold';
     font-size: 28px;
     font-weight: 900;
     color: #1B1C21;
     line-height: 40px;
-  }
-  .services::before {
-    position: absolute;
-    content: '';
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    width: 4px;
-    height: 40px;
-    background-color: #41F6D7;
   }
   .services__description {
     display: -webkit-box;
