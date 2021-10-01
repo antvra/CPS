@@ -15,6 +15,12 @@ h1,h2,h3,h4,h5,h6,p{
     margin: 0;
 }
 
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 body{
     background-color: #F8F8F8;
     margin: 0;
@@ -162,7 +168,7 @@ body{
 .services__description{
     margin-top: 24px;
     justify-content: space-between;
-    &-description{
+    &-text{
         &_first{
             color: #1B1C21;
             font-size: 14px;
@@ -179,18 +185,23 @@ body{
         &_third{
             display: none;
         }
-        &_readnext{
+
+        .readnext__button{
             display: flex;
             align-items: center;
-            h4{
-                font-size: 16px;
-                line-height: 24px;
-                letter-spacing: -0.2px;
-                color: #1B1C21;
-                margin-left: 8px;
-                font-weight: 400;
-            }
             margin-bottom: 16px;
+            border: none;
+            background: none;
+            padding: 0;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.2px;
+            font-family: 'TTLakes-Medium';
+            color: #1B1C21;
+            font-weight: 400;
+            &-img{
+                align-items: flex-start;
+            }
         }
     }
 

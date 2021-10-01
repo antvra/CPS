@@ -62,7 +62,7 @@
 
     .services__description{
         margin-top: 20px;
-        &-description{
+        &-text{
             &_first{
                 color: #1B1C21;
                 font-size: 14px;
@@ -84,18 +84,22 @@
                 margin-bottom: 10px;
                 display: block;
             }
-            &_readnext{
+            .readnext__button{
                 display: flex;
                 align-items: center;
-                h4{
-                    font-size: 16px;
-                    line-height: 24px;
-                    letter-spacing: -0.2px;
-                    color: #1B1C21;
-                    margin-left: 8px;
-                    font-weight: 400;
-                }
                 margin-bottom: 16px;
+                border: none;
+                background: none;
+                padding: 0;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: -0.2px;
+                font-family: 'TTLakes-Medium';
+                color: #1B1C21;
+                font-weight: 400;
+                &-img{
+                    align-items: flex-start;
+                }
             }
         }
 
