@@ -604,14 +604,28 @@ body {
   border-radius: 20px;
   background-color: #FF3E79;
   border: none;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 
 .mobile__button-close {
   background-image: url("../img/close.svg");
 }
 
+.mobile__button-close:hover {
+  -webkit-transform: scale(1.1) rotate(360deg);
+          transform: scale(1.1) rotate(360deg);
+}
+
 .mobile__button-search {
   background-image: url("../img/search.svg");
+}
+
+.mobile__button-search:hover {
+  -webkit-transform: scale(1.1) rotate(360deg);
+          transform: scale(1.1) rotate(360deg);
 }
 
 .mobile__button-call {
@@ -619,9 +633,19 @@ body {
   background-image: url("../img/call.svg");
 }
 
+.mobile__button-call:hover {
+  -webkit-transform: scale(1.1) rotate(360deg);
+          transform: scale(1.1) rotate(360deg);
+}
+
 .mobile__button-chat {
   margin-right: 16px;
   background-image: url("../img/chat.svg");
+}
+
+.mobile__button-chat:hover {
+  -webkit-transform: scale(1.1) rotate(360deg);
+          transform: scale(1.1) rotate(360deg);
 }
 
 .mobile__button-profile {
@@ -629,8 +653,37 @@ body {
   background-image: url("../img/profile.svg");
 }
 
+.mobile__button-profile:hover {
+  -webkit-transform: scale(1.1) rotate(360deg);
+          transform: scale(1.1) rotate(360deg);
+}
+
+.menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .menu__item:not(:first-child) {
   margin-top: 32px;
+}
+
+.menu__item-active > a {
+  color: #7E7E82;
+}
+
+.menu__item-active::before {
+  position: absolute;
+  content: '';
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 4px;
+  height: 32px;
+  background-color: #41F6D7;
+  left: 0;
 }
 
 .menu__link {
@@ -644,21 +697,15 @@ body {
   line-height: 24px;
   color: #1b1c21;
   text-decoration: none;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 
-.menu__link-active {
-  color: #7E7E82;
-}
-
-.menu__link-active::before {
-  position: absolute;
-  content: '';
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  width: 4px;
-  height: 32px;
-  background-color: #41F6D7;
-  left: 0;
+.menu__link:hover {
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
 }
 
 .mobile__footer {
