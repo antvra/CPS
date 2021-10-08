@@ -500,13 +500,14 @@ body {
     font-weight: 500;
   }
   .slider__menu {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   .services__description {
     margin-top: 20px;
@@ -615,6 +616,7 @@ body {
 }
 
 .mobile__button-close:hover {
+  cursor: pointer;
   -webkit-transform: scale(1.1) rotate(360deg);
           transform: scale(1.1) rotate(360deg);
 }
@@ -624,6 +626,7 @@ body {
 }
 
 .mobile__button-search:hover {
+  cursor: pointer;
   -webkit-transform: scale(1.1) rotate(360deg);
           transform: scale(1.1) rotate(360deg);
 }
@@ -634,6 +637,7 @@ body {
 }
 
 .mobile__button-call:hover {
+  cursor: pointer;
   -webkit-transform: scale(1.1) rotate(360deg);
           transform: scale(1.1) rotate(360deg);
 }
@@ -644,6 +648,7 @@ body {
 }
 
 .mobile__button-chat:hover {
+  cursor: pointer;
   -webkit-transform: scale(1.1) rotate(360deg);
           transform: scale(1.1) rotate(360deg);
 }
@@ -654,6 +659,7 @@ body {
 }
 
 .mobile__button-profile:hover {
+  cursor: pointer;
   -webkit-transform: scale(1.1) rotate(360deg);
           transform: scale(1.1) rotate(360deg);
 }
@@ -754,5 +760,13 @@ body {
 
 .footer__language-active {
   color: #7E7E82;
+}
+
+.footer__language:hover {
+  color: #7E7E82;
+}
+
+.lower {
+  margin-bottom: 32px;
 }
 /*# sourceMappingURL=style.css.map */

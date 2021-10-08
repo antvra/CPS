@@ -28,6 +28,7 @@
     &-close{
         background-image: url('../img/close.svg');
         &:hover{
+            cursor: pointer;
             transform: scale(1.1) rotate(360deg);
         }
     }
@@ -35,6 +36,7 @@
     &-search{
         background-image: url('../img/search.svg');
         &:hover{
+            cursor: pointer;
             transform: scale(1.1) rotate(360deg);
         }
     }
@@ -43,6 +45,7 @@
         margin-right: 16px;
         background-image: url('../img/call.svg');
         &:hover{
+            cursor: pointer;
             transform: scale(1.1) rotate(360deg);
         }
     }
@@ -51,6 +54,7 @@
         margin-right: 16px;
         background-image: url('../img/chat.svg');
         &:hover{
+            cursor: pointer;
             transform: scale(1.1) rotate(360deg);
         }
     }
@@ -59,6 +63,7 @@
         margin-right: 16px;
         background-image: url('../img/profile.svg');
         &:hover{
+            cursor: pointer;
             transform: scale(1.1) rotate(360deg);
         }
     }
@@ -149,5 +154,11 @@
     &-active{
         color: #7E7E82;
     }
+    &:hover{
+        color: #7E7E82;
+    }
 }
 
+.lower{
+    margin-bottom: 32px;
+}
