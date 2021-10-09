@@ -592,6 +592,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   min-height: 88px;
+  margin-bottom: 30px;
 }
 
 .mobile__header .logo {
