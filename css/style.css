@@ -187,8 +187,15 @@ body {
 }
 
 .slider__menu {
-  overflow-x: auto;
   display: -webkit-box;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-x: scroll;
+}
+
+.slider__menu::-webkit-scrollbar {
+  display: none;
+  /* for Chrome, Safari, and Opera */
 }
 
 .slider__menu-item {
