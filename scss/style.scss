@@ -158,17 +158,25 @@ body{
         align-items: center;
         width: 246px;
         height: 40px;
-        &:hover{
+        &:hover {
             background: #FFFFFF;
             border: 2px solid #B8ffEC;
             border-radius: 6px;
         }
+
         &_link{
             text-decoration: none;
             font-size: 16px;
             line-height: 24px;
             color: $item;
             letter-spacing: -0.2px;
+        }
+
+
+        &-active{
+            background: #FFFFFF;
+            border: 2px solid #B8ffEC;
+            border-radius: 6px;
         }
     }
 }
