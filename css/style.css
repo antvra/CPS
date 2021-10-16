@@ -906,6 +906,11 @@ body {
   font-family: 'TTLakes-Medium';
 }
 
+.rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 @media (min-width: 768px) {
   .vision {
     display: -webkit-box;

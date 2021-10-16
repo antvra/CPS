@@ -93,8 +93,12 @@
     background: inherit;
     font-family: 'TTLakes-Medium';
 
+
 }
 
+.rotate{
+    transform: rotate(180deg);
+}
 
 
 @media (min-width: 768px) {

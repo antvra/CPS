@@ -250,6 +250,8 @@
     vision.addEventListener('click', function(){
       //  vision.innerHTML = (vision.innerHTML === 'Показать все') ? vision.innerHTML = 'Скрыть все' : vision.innerHTML = 'Показать все';
         if (vision.innerHTML === 'Показать все') {
+            let img = document.querySelector('.vision__img');
+            img.classList.add('rotate');
             vision.innerHTML = 'Скрыть все';
             checkHidden.classList.remove('hidden');
         }
