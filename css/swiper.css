@@ -169,6 +169,10 @@
   .software__content .swiper-slide {
     width: 240px;
   }
+  .software .notmobile::after {
+    content: '';
+    width: 224px;
+  }
 }
 
 @media (min-width: 1120px) {
@@ -219,6 +223,10 @@
             box-sizing: border-box;
   }
   .software__content .swiper-slide {
+    width: 240px;
+  }
+  .software .notmobile::after {
+    content: '';
     width: 240px;
   }
 }

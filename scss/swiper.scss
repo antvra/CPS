@@ -76,8 +76,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
     row-gap: 16px;
-
-
 }
 
 
@@ -108,6 +106,8 @@
     .vision{
         display: flex;
     }
+
+
 
     .software{
 
@@ -153,6 +153,11 @@
                 }
             }
 
+        }
+
+        .notmobile::after {
+            content: '';
+            width: 224px;
         }
 
 
@@ -207,6 +212,11 @@
                 }
             }
 
+        }
+
+        .notmobile::after {
+            content: '';
+            width: 240px;
         }
 
 
