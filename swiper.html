@@ -246,11 +246,11 @@
 
     const vision = document.querySelector('.vision > span');
     let checkHidden = document.querySelector('.resolution__swiper');
+    let img = document.querySelector('.vision__img');
 
     vision.addEventListener('click', function(){
       //  vision.innerHTML = (vision.innerHTML === 'Показать все') ? vision.innerHTML = 'Скрыть все' : vision.innerHTML = 'Показать все';
         if (vision.innerHTML === 'Показать все') {
-            let img = document.querySelector('.vision__img');
             img.classList.add('rotate');
             vision.innerHTML = 'Скрыть все';
             checkHidden.classList.remove('hidden');
@@ -258,6 +258,7 @@
         else{
             vision.innerHTML = 'Показать все';
             checkHidden.classList.add('hidden');
+            img.classList.remove('rotate');
         }
 
     })
