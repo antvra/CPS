@@ -162,43 +162,78 @@
                             <button class="software__content-btn"></button>
                         </div>
 
-
-                        <div class="resolution__swiper hidden">
-                            <div class="software__content-item">
-                                <div class="software__content-img">
-                                    <img class="content-img_logo" src="img/lenovologo.png" alt="brand__logo">
-                                </div>
-                                <button class="software__content-btn"></button>
+                        <div class="software__content-item hidden">
+                            <div class="software__content-img">
+                                <img class="content-img_logo" src="img/lenovologo.png" alt="brand__logo">
                             </div>
-
-                            <div class="software__content-item">
-                                <div class="software__content-img">
-                                    <img class="content-img_logo" src="img/lenovologo.png" alt="brand__logo">
-                                </div>
-                                <button class="software__content-btn"></button>
-                            </div>
-
-                            <div class="software__content-item">
-                                <div class="software__content-img">
-                                    <img class="content-img_logo" src="img/lenovologo.png" alt="brand__logo">
-                                </div>
-                                <button class="software__content-btn"></button>
-                            </div>
-
-                            <div class="software__content-item">
-                                <div class="software__content-img">
-                                    <img class="content-img_logo" src="img/lenovologo.png" alt="brand__logo">
-                                </div>
-                                <button class="software__content-btn"></button>
-                            </div>
-
-                            <div class="software__content-item">
-                                <div class="software__content-img">
-                                    <img class="content-img_logo" src="img/lenovologo.png" alt="brand__logo">
-                                </div>
-                                <button class="software__content-btn"></button>
-                            </div>
+                            <button class="software__content-btn"></button>
                         </div>
+
+                        <div class="software__content-item hidden">
+                            <div class="software__content-img">
+                                <img class="content-img_logo" src="img/lenovologo.png" alt="brand__logo">
+                            </div>
+                            <button class="software__content-btn"></button>
+                        </div>
+
+                        <div class="software__content-item hidden">
+                            <div class="software__content-img">
+                                <img class="content-img_logo" src="img/lenovologo.png" alt="brand__logo">
+                            </div>
+                            <button class="software__content-btn"></button>
+                        </div>
+
+                        <div class="software__content-item hidden">
+                            <div class="software__content-img">
+                                <img class="content-img_logo" src="img/lenovologo.png" alt="brand__logo">
+                            </div>
+                            <button class="software__content-btn"></button>
+                        </div>
+
+                        <div class="software__content-item hidden">
+                            <div class="software__content-img">
+                                <img class="content-img_logo" src="img/lenovologo.png" alt="brand__logo">
+                            </div>
+                            <button class="software__content-btn"></button>
+                        </div>
+
+
+                        <!-- <div class="resolution__swiper hidden">
+                            <div class="software__content-item">
+                                <div class="software__content-img">
+                                    <img class="content-img_logo" src="img/lenovologo.png" alt="brand__logo">
+                                </div>
+                                <button class="software__content-btn"></button>
+                            </div>
+
+                            <div class="software__content-item">
+                                <div class="software__content-img">
+                                    <img class="content-img_logo" src="img/lenovologo.png" alt="brand__logo">
+                                </div>
+                                <button class="software__content-btn"></button>
+                            </div>
+
+                            <div class="software__content-item">
+                                <div class="software__content-img">
+                                    <img class="content-img_logo" src="img/lenovologo.png" alt="brand__logo">
+                                </div>
+                                <button class="software__content-btn"></button>
+                            </div>
+
+                            <div class="software__content-item">
+                                <div class="software__content-img">
+                                    <img class="content-img_logo" src="img/lenovologo.png" alt="brand__logo">
+                                </div>
+                                <button class="software__content-btn"></button>
+                            </div>
+
+                            <div class="software__content-item">
+                                <div class="software__content-img">
+                                    <img class="content-img_logo" src="img/lenovologo.png" alt="brand__logo">
+                                </div>
+                                <button class="software__content-btn"></button>
+                            </div>
+                        </div> -->
 
 
                     </div>
@@ -244,24 +279,78 @@
         notSwiperElements.classList.remove('hidden')
     }
 
+
+
+
+
     const vision = document.querySelector('.vision > span');
-    let checkHidden = document.querySelector('.resolution__swiper');
+    let checkHidden = document.querySelectorAll('.software__content-item.hidden');
     let img = document.querySelector('.vision__img');
 
-    vision.addEventListener('click', function(){
-      //  vision.innerHTML = (vision.innerHTML === 'Показать все') ? vision.innerHTML = 'Скрыть все' : vision.innerHTML = 'Показать все';
+
+    if(document.documentElement.clientWidth <= 768){
+        vision.addEventListener('click', function(){
         if (vision.innerHTML === 'Показать все') {
             img.classList.add('rotate');
             vision.innerHTML = 'Скрыть все';
-            checkHidden.classList.remove('hidden');
+            for(let i = 0; i < checkHidden.length; i++) {
+                checkHidden[i].classList.remove('hidden');
+            }
         }
         else{
             vision.innerHTML = 'Показать все';
-            checkHidden.classList.add('hidden');
+            for(let i = 0; i < checkHidden.length; i++) {
+                checkHidden[i].classList.add('hidden');
+            }
             img.classList.remove('rotate');
         }
 
     })
+    }
+
+    if(document.documentElement.clientWidth >= 1120) {
+        for(let i = 0; i < 2; i++) {
+                checkHidden[i].classList.remove('hidden');
+            }
+
+        vision.addEventListener('click', function(){
+        if (vision.innerHTML === 'Показать все') {
+            img.classList.add('rotate');
+            vision.innerHTML = 'Скрыть все';
+            for(let i = 2; i < checkHidden.length; i++) {
+                checkHidden[i].classList.remove('hidden');
+            }
+        }
+        else{
+            vision.innerHTML = 'Показать все';
+            for(let i = 2; i < checkHidden.length; i++) {
+                checkHidden[i].classList.add('hidden');
+            }
+            img.classList.remove('rotate');
+        }
+
+    })
+
+
+    }
+
+    // vision.addEventListener('click', function(){
+    //     if (vision.innerHTML === 'Показать все') {
+    //         img.classList.add('rotate');
+    //         vision.innerHTML = 'Скрыть все';
+    //         for(let i = 0; i < checkHidden.length; i++) {
+    //             checkHidden[i].classList.remove('hidden');
+    //         }
+    //     }
+    //     else{
+    //         vision.innerHTML = 'Показать все';
+    //         for(let i = 0; i < checkHidden.length; i++) {
+    //             checkHidden[i].classList.add('hidden');
+    //         }
+    //         img.classList.remove('rotate');
+    //     }
+
+    // })
 
 
 
